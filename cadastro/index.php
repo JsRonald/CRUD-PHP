@@ -34,7 +34,7 @@
         </div>
     </div>  
     <footer>
-        <p><i class="fas fa-copyright"></i> 2024 José Ronald. Todos os direitos reservados.</p>
+        <p><i class="fas fa-copyright"></i> 2025 José Ronald. Todos os direitos reservados.</p>
     </footer>  
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

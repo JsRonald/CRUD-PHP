@@ -19,7 +19,7 @@
         </nav>
     </header>
     <div class="container">
-        <div class="row">
+        <div >
             <?php
 
               /* INCLUSÃO DO ARQUIVO QUE REALIZA A CONEXÃO COM O BANCO DE DADOS*/
@@ -58,12 +58,12 @@
                     
                     }
                     /*FUNÇÃO CRIADA DENTRO DO ARQUIVO CONEXAO*/
-                    mensagem("$nome cadastrado com sucesso", 'success');
+                    mensagem("$nome cadastrado com sucesso", 'success','feito.png');
                 }
                 else
                 { 
                     /*FUNÇÃO CRIADA DENTRO DO ARQUIVO CONEXAO*/
-                    mensagem("$nome não cadastrado", 'danger');
+                    mensagem("$nome não cadastrado", 'danger','naofeito.jpg');
                 }
             ?>
             <br>
@@ -71,7 +71,7 @@
         </div>
     </div>
     <footer>
-        <p><i class="fas fa-copyright"></i> 2024 José Ronald. Todos os direitos reservados.</p>
+        <p><i class="fas fa-copyright"></i> 2025 José Ronald. Todos os direitos reservados.</p>
     </footer>  
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
