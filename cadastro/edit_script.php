@@ -36,11 +36,22 @@
                 $telefone = $_POST['telefone'];
                 $email = $_POST['email'];
                 $data_nascimento = $_POST['data_nascimento'];
-                $foto =$_FILES['foto'];
-                $nomefoto = mover_foto($foto);
-                if ($nomefoto == 0){
-                  $nomefoto = null;
+                // Buscar foto atual do banco se nenhuma nova for enviada
+                $foto = $_FILES['foto'];
+                if ($foto['name'] == '') {
+                    // Nenhuma nova foto enviada, buscar a atual
+                    $sqlFoto = "SELECT foto FROM pessoas WHERE cod_pessoas = '$cod_pessoas'";
+                    $resultadoFoto = mysqli_query($conexao, $sqlFoto);
+                    $linha = mysqli_fetch_assoc($resultadoFoto);
+                    $nomefoto = $linha['foto']; // mantém a foto existente
+                } else {
+                    // Nova foto enviada, mover para pasta
+                    $nomefoto = mover_foto($foto);
+                    if ($nomefoto == 0) {
+                        $nomefoto = null;
+                    }
                 }
+
                 /* ATUALIZAR DADOS DENTRO DA TABELA*/
                 $sql = "UPDATE pessoas SET nome='$nome', endereco='$endereco', telefone='$telefone', email='$email', data_nascimento='$data_nascimento',foto='$nomefoto' WHERE cod_pessoas='$cod_pessoas'";
 

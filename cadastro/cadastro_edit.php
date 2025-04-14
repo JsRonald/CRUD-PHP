@@ -47,7 +47,7 @@
                         }
                     ?>         
                     <i class="fas fa-pencil-alt edit-icon"></i>         
-                    <input type="file" class="input_foto" name="foto" required accept="image/*">             
+                    <input type="file" class="input_foto" name="foto" accept="image/*">             
                 </div>
 
                 <script>
@@ -70,7 +70,7 @@
                 </script>
                 <div class="form-group">
                     <label for="nome">Nome Completo:</label>
-                    <input type="text" class="form-control" name="nome" required value="<?php echo $linha['nome']; ?>">                
+                    <input type="text" class="form-control" name="nome"  value="<?php echo $linha['nome']; ?>">                
                 </div>
                 <div class="form-group">
                     <label for="endereco">Endereço:</label>
@@ -86,7 +86,7 @@
                 </div>
                 <div class="form-group">
                     <label for="data_nascimento">Data de Nascimento:</label>
-                    <input type="date" class="form-control" name="data_nascimento" required value="<?php echo $linha['data_nascimento']; ?>">              
+                    <input type="date" class="form-control" name="data_nascimento" value="<?php echo $linha['data_nascimento']; ?>">              
                 </div>
                 
                 <center>

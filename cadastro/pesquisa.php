@@ -22,7 +22,7 @@
             </form>
         </nav>
     </header>
-    <div style="margin-top:100px;"class="container">
+    <div style="margin-top:300px;"class="container">
         <div class="row">
             <center>
                 <h1 style="font-family:Didot, serif; font-size:50px;">Cadastrados</h1><br>
@@ -35,7 +35,7 @@
                 </form>
             </nav>
             
-            <table class="table table-hover" style="margin:auto; margin-top: 20px;margin-bottom:20px;border:2px solid black;padding:10px;">
+            <table class="table table-hover" style="margin:auto; margin-top: 20px;margin-bottom:20px;border:2px solid black;">
                 <thead>
                     <tr>
                         <th scope="col" style ='border-right:1px solid black'>Foto</th>
